@@ -1,11 +1,11 @@
-setwd("/exports/igmm/eddie/tomlinson-denovo-POL/UKBioBank2024")
+setwd("/main_dir/lab_working_dir/UKBioBank2024")
 library(dplyr)
 library(data.table)
 library(stringr) 
 ctrl <- read.table("10K_euro_unrelated_control_IDs_for_CRC", header = F, sep="")
-f41203 <- readRDS("/gpfs/igmmfs01/eddie/UK-BioBank-proj19655/phenotypes/2017_12_13/dataset_11330/p04_divided_into_chunks/ukb11300_f41200_to_f41203.rds") ##41202-41203
-f41204 <- readRDS("/gpfs/igmmfs01/eddie/UK-BioBank-proj19655/phenotypes/2017_12_13/dataset_11330/p04_divided_into_chunks/ukb11300_f41204_to_f90010.rds") ##41204-41205
-selfRep <- readRDS("/gpfs/igmmfs01/eddie/UK-BioBank-proj19655/phenotypes/2017_12_13/dataset_11330/p04_divided_into_chunks/ukb11300_f6139_to_f20002.rds") ##selfREported 20002
+f41203 <- readRDS("/main_dir/UKBB_project_dir/phenotypes/2017_12_13/dataset/p04_divided_into_chunks/ukb_f41200_to_f41203.rds") ##41202-41203
+f41204 <- readRDS("/main_dir/UKBB_project_dir/phenotypes/2017_12_13/dataset/p04_divided_into_chunks/ukb_f41204_to_f90010.rds") ##41204-41205
+selfRep <- readRDS("/main_dir/UKBB_project_dir/phenotypes/2017_12_13/dataset/p04_divided_into_chunks/ukb_f6139_to_f20002.rds") ##selfREported 20002
 ##codes for 41202-41204:
 #D12:D120,D121,D122,D123,D124,D125,D126,D127,D128,D129 and K635
 
