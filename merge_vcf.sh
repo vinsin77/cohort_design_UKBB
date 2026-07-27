@@ -13,11 +13,11 @@ chr=$(head -n $SGE_TASK_ID chrom_list | tail -n 1)
 # Load bcftools
 source /etc/profile.d/modules.sh
 
-module load roslin/bcftools/1.20
+module load bcftools/1.20
 # Define file paths
 CASE_VCF="/main_dir/lab_working_dir/UKBioBank2024/subset_VCFs_1224_CRC_euro_unrelated_cases/CRC_case_chr${chr}_subset.vcf.gz"
-CONTROL_VCF="/main_dir/lab_working_dir/UKBioBank2024/ggul/control_subset/Controls_chr${chr}_subset.vcf.gz"
-OUT_DIR="/main_dir/lab_working_dir/UKBioBank2024/ggul/merged_vcfs"
+CONTROL_VCF="/main_dir/lab_working_dir/UKBioBank2024/my_dir/control_subset/Controls_chr${chr}_subset.vcf.gz"
+OUT_DIR="/main_dir/lab_working_dir/UKBioBank2024/my_dir/merged_vcfs"
 MERGED_VCF="${OUT_DIR}/chr${chr}.vcf.gz"
 
 # Create output directory if needed
