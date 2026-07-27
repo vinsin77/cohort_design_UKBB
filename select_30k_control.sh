@@ -15,7 +15,7 @@ chr=$(head -n $SGE_TASK_ID chrom_list | tail -n 1)
 
 source /etc/profile.d/modules.sh
 
-module load roslin/bcftools/1.20
+module load bcftools/1.20
 
 #for each chromosome vcf, select 20K controls and output into new vcf
 #gzip and index each vcf
